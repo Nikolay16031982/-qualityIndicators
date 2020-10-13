@@ -1,24 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Temp from "./temp/Temp"
+import NaviBar from "./Components/NaviBar"
+//import Switch from 'react-bootstrap/esm/Switch';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
+import Home from "./Home";
+import About from "./About";
+import Users from "./Users";
+
+const Data={
+  labels:["1","2","3","4","5","6","8","10"],
+  datasets:[
+      {
+        data:[1, 2, 3, 4, 11, 5]
+      }
+ ]
+}
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div>
+      <Router>
+      <NaviBar/>
+        <Switch>
+        <Route exact path="/" component={Home}/>
+        <Route path="/users" component={Users}/>
+        <Route path="/about" component={About}/>
+        <Route path="/temp" component={Temp}/>
+        </Switch>
+      </Router>    
     </div>
   );
 }
