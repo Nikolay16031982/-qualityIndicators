@@ -1,10 +1,20 @@
 import React from "react";
-import {Navbar, Nav, Button} from "react-bootstrap";
+import {Navbar, Nav, Button, Modal,Stiles} from "react-bootstrap";
 import {Link} from "react-router-dom";
+/*</div>
+<Modal show={show}>
+<Modal.Header closeButton>
+       <Modal.Title>Log In</Modal.Title>
+     </Modal.Header>
+    </Modal>
+    <Stiles></Stiles>
+    onClick={handleShow} onClick={handleShow}
+    */
 
 export default function NaviBar(){
   return(
     <div>
+      
    <Navbar collapseOnSelect expand = "lg" bg = "dark" variant = "dark">
    <Navbar.Brand> AAAAA</Navbar.Brand> 
    <Navbar.Toggle area-controls="responsiv-navbar-nav"/> 
@@ -17,17 +27,18 @@ export default function NaviBar(){
        </Nav>
 
        <Nav>
-        <Button variant="primary" className="mr-2">Log In</Button>
-        <Button variant="primary">Sign Out</Button>
-        </Nav>  
+        <Button variant="primary" className="mr-2" >Log In</Button>
+        <Button variant="primary" >Sign Out</Button>
+        </Nav> 
 
 
-
-      </Navbar.Collapse>   
-
+      </Navbar.Collapse> 
 
 
-    </Navbar>
+    </Navbar>    
     
+    
+     
   </div>  
 )}
+

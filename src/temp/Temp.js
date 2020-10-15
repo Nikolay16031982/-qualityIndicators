@@ -1,6 +1,9 @@
 import React from 'react'
 
 export default function Temp() {
+    const obj=new(Document);
+    console.log(obj.URL);
+
     return (
         <div>
             <li>FComponent</li>
