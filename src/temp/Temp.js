@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Temp() {
-    const obj=new(Document);
+    const obj = new (Document);
     console.log(obj.URL);
 
     return (

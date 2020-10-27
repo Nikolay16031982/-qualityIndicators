@@ -1,5 +1,5 @@
 import React from 'react';
-import Gist from "./Gist"
+import Gist from "./Components/Gist/Gist";
  const Users = () => {
     return (
         <div>

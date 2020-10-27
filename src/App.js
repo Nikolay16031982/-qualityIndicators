@@ -14,29 +14,29 @@ import Home from "./Home";
 import About from "./About";
 import Users from "./Users";
 
-const Data={
-  labels:["1","2","3","4","5","6","8","10"],
-  datasets:[
-      {
-        data:[1, 2, 3, 4, 11, 5]
-      }
- ]
+const Data = {
+  labels: ["1", "2", "3", "4", "5", "6", "8", "10"],
+  datasets: [
+    {
+      data: [1, 2, 3, 4, 11, 5]
+    }
+  ]
 }
 
 
 function App() {
   return (
-    
+
     <div>
       <Router>
-      <NaviBar/>
+        <NaviBar />
         <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route path="/users" component={Users}/>
-        <Route path="/about" component={About}/>
-        <Route path="/temp" component={Temp}/>
+          <Route exact path="/" component={Home} />
+          <Route path="/users" component={Users} />
+          <Route path="/about" component={About} />
+          <Route path="/temp" component={Temp} />
         </Switch>
-      </Router>    
+      </Router>
     </div>
   );
 }
